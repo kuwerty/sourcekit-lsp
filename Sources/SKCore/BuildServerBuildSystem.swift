@@ -160,7 +160,7 @@ extension BuildServerBuildSystem: BuildSystem {
   }
 
   public var indexDatabasePath: AbsolutePath? {
-    return buildFolder?.appending(components: "index", "db")
+    return indexStorePath?.parentDirectory.appending(components: "db")
   }
 
   public func settings(for url: URL, _ language: Language) -> FileBuildSettings? {
