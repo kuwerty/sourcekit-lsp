@@ -5,6 +5,7 @@ import PackageDescription
 let package = Package(
     name: "SourceKitLSP",
     products: [
+      .executable(name: "sourcekit-lsp", targets: ["sourcekit-lsp"]),
       .library(name: "SourceKit", type: .dynamic, targets: ["SourceKit"]),
     ],
     dependencies: [
