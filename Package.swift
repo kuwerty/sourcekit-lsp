@@ -5,6 +5,7 @@ import PackageDescription
 let package = Package(
     name: "SourceKitLSP",
     products: [
+      .library(name: "SourceKit", type: .dynamic, targets: ["SourceKit"]),
     ],
     dependencies: [
       // See 'Dependencies' below.

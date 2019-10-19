@@ -31,4 +31,9 @@ public struct SourceKitOptionsResult: ResponseType, Hashable {
 
   /// The working directory for the compile command.
   public var workingDirectory: String?
+
+  public init(options:[String], workingDirectory:String?) {
+    self.options = options
+    self.workingDirectory = workingDirectory
+  }
 }

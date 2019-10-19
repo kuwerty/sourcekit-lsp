@@ -115,6 +115,8 @@ public struct BuildServerCapabilities: Codable, Hashable {
   /// The server sends notifications to the client on build
   /// target change events via buildTarget/didChange
   public var buildTargetChangedProvider: Bool? = nil
+
+  public init() { }
 }
 
 public struct CompileProvider: Codable, Hashable {
